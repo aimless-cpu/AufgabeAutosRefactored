@@ -2,18 +2,18 @@ package com.company;
 
 public class DieselEngine {
     //instance
-    private String fuelType;
+    private String FUELTYPE;
 
     //constructor
-    public DieselEngine(String fuelType) {
-        this.fuelType = fuelType;
+    public DieselEngine(String FUELTYPE) {
+        this.FUELTYPE = FUELTYPE;
     }
 
-    public String getFuelType() {
-        return fuelType;
+    public String getFUELTYPE() {
+        return FUELTYPE;
     }
 
-    public void setFuelType(String fuelType) {
-        this.fuelType = fuelType;
+    public void setFUELTYPE(String FUELTYPE) {
+        this.FUELTYPE = FUELTYPE;
     }
 }

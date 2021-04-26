@@ -7,8 +7,12 @@ public class Main {
     public static void main(String[] args) {
 
         //Car c1 = new Car()
-        Producer p1 = new Producer("test","s3");
-        System.out.println(p1.getBrand());
+        Producer p1 = new Producer();
+
+
+
+
+
 
         Scanner sc = new Scanner(System.in);
 
@@ -18,7 +22,11 @@ public class Main {
         System.out.println(p1.getBrand());
         System.out.println(p1.getName());
 
+        Car c1 = new Car(p1);
 
+        System.out.println(c1.getProducer().getBrand());
+        System.out.println(c1.getProducer().getName());
+        System.out.println(c1.g);
 
 
 

@@ -1,13 +1,13 @@
 package com.company;
 
-public class Engine extends DieselEngine {
+public class Engine extends DieselEngine, GasEngine {
 
     //instance
     private int horsePower;
 
     //constructor
-    public Engine(String fuelType, int horsePower) {
-        super(fuelType);
+    public Engine(String FUELTYPE, int horsePower) {
+        super(FUELTYPE);
         this.horsePower = horsePower;
     }
 

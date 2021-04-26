@@ -6,7 +6,7 @@ public class Producer {
     private String name;
 
     //constructor
-    public Producer(String brand, String name) {
+    public Producer() {
         this.brand = brand;
         this.name = name;
     }
