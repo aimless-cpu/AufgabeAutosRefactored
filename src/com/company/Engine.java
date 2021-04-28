@@ -2,17 +2,19 @@ package com.company;
 
 public class Engine {
     //instance
-    public int horsePower;
+    private int horsePower;
 
+
+    //constructor
     public Engine(int horsePower) {
         this.horsePower = horsePower;
     }
 
-//constructor
+    //method
+
 
 
     //getter setter
-
 
     public int getHorsePower() {
         return horsePower;

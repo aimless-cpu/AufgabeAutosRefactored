@@ -1,15 +1,18 @@
 package com.company;
 
 public class DieselEngine extends Engine{
+
     //instance
     private String FUELTYPE = "DIESEL";
-    private int horsePower1 = 100;
-    private int horsePower2 = 120;
+
 
     //constructor
+
     public DieselEngine(int horsePower) {
         super(horsePower);
+        //this.FUELTYPE = FUELTYPE;
     }
+
 
     //getter setter
 
@@ -22,11 +25,4 @@ public class DieselEngine extends Engine{
         this.FUELTYPE = FUELTYPE;
     }
 
-    public int getHorsePower1() {
-        return horsePower1;
-    }
-
-    public int getHorsePower2() {
-        return horsePower2;
-    }
 }
