@@ -5,27 +5,36 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String userInputString;
 
-
-        Producer p1 = new Producer();
-        Car c1 = new Car(p1);
-
+        DieselEngine d1 = new DieselEngine(0);
 
         Scanner sc = new Scanner(System.in);
-        userInputString = sc.next();
 
-        c1.producer.setBrand(userInputString);
-        c1.producer.setName(userInputString);
+        System.out.println("1 Diesel, 2 Benzin");
+        int input = sc.nextInt();
 
-        System.out.println(c1.producer.getBrand());
-        System.out.print(c1.producer.getName());
-
-
-
+        if (input == 1) {
+            System.out.println("Wie viel PS");
+            input = sc.nextInt();
+            d1.setHorsePower(input);
 
 
+        } else if (input == 2) {
+            System.out.println("GAS");
+        }
+
+
+
+
+
+
+
+
+        System.out.println(d1.getHorsePower());
+        System.out.println(d1.getFUELTYPE());
 
 
     }
+
+
 }
