@@ -5,28 +5,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        String userInputString;
 
-        //Car c1 = new Car()
+
         Producer p1 = new Producer();
-
-
-
-
+        Car c1 = new Car(p1);
 
 
         Scanner sc = new Scanner(System.in);
+        userInputString = sc.next();
 
-        p1.setBrand(sc.next());
-        p1.setName(sc.next());
+        c1.producer.setBrand(userInputString);
+        c1.producer.setName(userInputString);
 
-        System.out.println(p1.getBrand());
-        System.out.println(p1.getName());
+        System.out.println(c1.producer.getBrand());
+        System.out.print(c1.producer.getName());
 
-        Car c1 = new Car(p1);
 
-        System.out.println(c1.getProducer().getBrand());
-        System.out.println(c1.getProducer().getName());
-        System.out.println(c1.g);
+
 
 
 

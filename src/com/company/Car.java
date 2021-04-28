@@ -8,7 +8,7 @@ public class Car {
 
     //constructor
 
-    public Car(Producer producer, Engine engine) {
+    public Car(Producer producer) {
         this.producer = producer;
         this.engine = engine;
     }
