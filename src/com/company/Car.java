@@ -30,18 +30,6 @@ public class Car {
         return null;
     }
 
-//    public D getMotorType() {
-//        if (this.engine.getClass().equals(DieselEngine.class)) {
-//            this.engine = (DieselEngine) this.engine;
-//            return this.engine;
-//        } else if (this.engine.getClass().equals(GasEngine.class)) {
-//            this.engine = (GasEngine) this.engine;
-//            return this.engine;
-//        }
-//        return null;
-//
-//    }
-
 
 
 

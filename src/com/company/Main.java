@@ -34,6 +34,8 @@ public class Main {
             c1.setEngine(ge);
         }
 
+        System.out.println("Wieviel PS?");
+
         userInputInt = sc.nextInt();
         c1.getEngine().setHorsePower(userInputInt);
 
