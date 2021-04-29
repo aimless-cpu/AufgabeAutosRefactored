@@ -34,55 +34,27 @@ public class Main {
             c1.setEngine(ge);
         }
 
-
         userInputInt = sc.nextInt();
         c1.getEngine().setHorsePower(userInputInt);
 
+        System.out.print(c1.getProducer().getBrand() + ";");
+        System.out.print(c1.getProducer().getName() + ";");
+        System.out.print(c1.getEngineType() + ";");
+        System.out.print(c1.getEngine().getHorsePower() + ";");
 
-
-
-        System.out.println(c1.getProducer().getBrand());
-        System.out.println(c1.getProducer().getName());
-        System.out.println(c1.getEngine().getHorsePower());
-
-        System.out.println(c1.getEngineType());
-
-        //System.out.println(c1.habeDieselMotor().getFuelType());
-
-
-
-
-
-
-
-
-
-
-
-        //c1.dieselEngine.getFuelType();
-
-
-
-
-
-
-
-
-
-
-        //c1.dieselEngine.setFuelType(200);
-        //System.out.println(c1.dieselEngine.getFuelType());
-
-
-
-
-
-
+        System.out.println(getPrice(de, ge, c1));
 
     }
 
-
-
+    private static double getPrice(DieselEngine de, GasEngine ge, Car c1) {
+        double price = 20000;
+        if (c1.getEngine().equals(de)) {
+            price = (price + 20000) + c1.getEngine().getHorsePower();
+        } else if (c1.getEngine().equals(ge)) {
+            price = (price + 10000) + c1.getEngine().getHorsePower();
+        }
+        return price;
+    }
 
 
 }
