@@ -1,28 +1,19 @@
 package com.company;
 
 public class DieselEngine extends Engine{
-
-    //instance
-    private String FUELTYPE = "DIESEL";
-
-
-    //constructor
+    private String fuelType = "Diesel";
 
     public DieselEngine(int horsePower) {
         super(horsePower);
-        //this.FUELTYPE = FUELTYPE;
     }
 
 
-    //getter setter
-
-
-    public String getFUELTYPE() {
-        return FUELTYPE;
+    public void setFuelType(String fuelType) {
+        this.fuelType = fuelType;
     }
 
-    public void setFUELTYPE(String FUELTYPE) {
-        this.FUELTYPE = FUELTYPE;
+    public String getFuelType() {
+        return fuelType;
     }
 
 }

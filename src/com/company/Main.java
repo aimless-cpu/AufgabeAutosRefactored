@@ -1,44 +1,49 @@
 package com.company;
 
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        Engine d1 = new DieselEngine(10);
+        Car c1 = new Car(d1);
+
+        System.out.println(c1.getEngine().getHorsePower());
+
+//        Engine e = c1.getEngine();
+//        if (e.getClass().equals(DieselEngine.class)){
+//            DieselEngine de = (DieselEngine) e;
+//            de.getFuelType();
+//        }
+
+        System.out.println(c1.habeDieselMotor().getFuelType());
 
 
-        DieselEngine d1 = new DieselEngine(10);
-        //GasEngine g1 = new GasEngine(20);
-
-        int i = 1;
-
-        //AtomicReference<Object> t1 = new AtomicReference<>(getEngineType(i));
-        Object t1 = getEngineType(i);
-
-        Car c2 = new Car((GasEngine) t1);
-
-        Scanner sc = new Scanner(System.in);
+        //c1.dieselEngine.getFuelType();
 
 
-        int input = sc.nextInt();
-        c2.gasEngine.setHorsePower(input);
-        System.out.println(c2.gasEngine.getFUELTYPE());
-        System.out.println(c2.gasEngine.getHorsePower());
+
+
+
+
+
+
+
+
+        //c1.dieselEngine.setFuelType(200);
+        //System.out.println(c1.dieselEngine.getFuelType());
+
+
+
+
+
 
 
     }
 
-    private static Object getEngineType(int i) {
-        if (i == 1) {
-            DieselEngine t1 = new DieselEngine(0);
-            return t1;
-        } else {
-            GasEngine t1 = new GasEngine(0);
-            return t1;
-        }
-    }
+
+
 
 
 }
