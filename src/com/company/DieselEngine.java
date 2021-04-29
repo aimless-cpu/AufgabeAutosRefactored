@@ -7,7 +7,6 @@ public class DieselEngine extends Engine{
         super(horsePower);
     }
 
-
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
     }
